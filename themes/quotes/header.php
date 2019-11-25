@@ -7,4 +7,4 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body <?php body_class();?>>
-<h1><?php bloginfo('name');?></h1>
+<h1>quotes <span>on</span> dev_</h1>
