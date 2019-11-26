@@ -5,9 +5,10 @@
 
     <?php while( have_posts() ) :
         the_post(); ?>
-    
-    <h2><?php the_title(); ?></h2>
+    <section class="submit-section">
+    <!-- <h2><?php the_title(); ?></h2> -->
     <?php the_content(); ?>
+    </section>
 
     <!-- Loop ends -->
 
@@ -15,7 +16,9 @@
     
     </section>
         <form>
-            <input id="quote-title" type="text">
+            <input id="quote-title" type="text" placeholder="Your title goes here... " style="width: 300px; height: 30px;">
+            <br>
+            <textarea id="quote-content" type="text" cols= "100" rows= "8" placeholder="Your quote goes here... "></textarea>
         </form>
 
     <button id ="submit-button">Submit a Quote</button>

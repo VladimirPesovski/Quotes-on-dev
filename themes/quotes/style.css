@@ -8,13 +8,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: Quotes on dev
 */
 body {
-  background-color: black;
+  font-family: 'Rock Salt', cursive;
+  background-color: #222222;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 50px;
-  font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
   color: white; }
 
@@ -29,11 +29,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 100px; }
+  margin: 100px 100px 20px 100px; }
   #quotes-content i {
-    color: green;
+    color: #00cc00;
     margin: 0px 50px;
-    font-size: 150px; }
+    font-size: 5em; }
   #quotes-content .content {
     font-size: 2em;
     text-align: left; }
@@ -46,8 +46,47 @@ body {
             flex-direction: column; }
 
 button {
-  background-color: green;
-  margin: 100px;
-  padding: 20px 50px;
-  font-size: 24px;
-  color: white; }
+  font-family: 'Rock Salt', cursive;
+  padding: 10px 40px;
+  font-size: 1.5em;
+  color: #00cc00;
+  border-color: #00cc00;
+  background: none;
+  border-radius: 2px; }
+
+footer {
+  bottom: 0; }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 1.3em; }
+    footer ul li {
+      list-style-type: none;
+      color: #00cc00;
+      padding: 15px;
+      margin: 30px;
+      text-decoration: none; }
+      footer ul li a {
+        text-decoration: none;
+        color: #00cc00; }
+  footer p {
+    color: #00cc00; }
+    footer p span {
+      color: white;
+      padding: 0px 15px 0px 0px; }
+
+.submit-section {
+  margin: 0px;
+  font-size: 2em; }
+
+#submit-button {
+  margin: 100px; }
+
+form input {
+  margin: 30px; }

@@ -26,7 +26,7 @@
                     </div>
     
                     <div class="title">
-                        <h2>${title}</h2>
+                        <h2><span>-</span> ${title}</h2>
                     </div>
                 </span>
                 <i class="fas fa-quote-right"></i>`)

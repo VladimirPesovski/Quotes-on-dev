@@ -15,7 +15,7 @@
         </div>
 
         <div class="title">
-            <h2><?php the_title(); ?></h2>
+            <h2><span>- </span><?php the_title(); ?></h2>
         </div>
     </span>
 
@@ -27,9 +27,10 @@
     
     </section>
     
-    <button id ="quote-button">Generate New Quote</button>
+    <button id ="quote-button">Show Me Another!</button>
     <!-- <?php the_posts_navigation();?> -->
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
+
 <?php get_footer();?>
