@@ -8,10 +8,17 @@
     
     <h2><?php the_title(); ?></h2>
     <?php the_content(); ?>
+
     <!-- Loop ends -->
+
     <?php endwhile;?>
+    
     </section>
-    <button id ="quote-button">Generate New Quote</button>
+        <form>
+            <input id="quote-title" type="text">
+        </form>
+
+    <button id ="submit-button">Submit a Quote</button>
     <!-- <?php the_posts_navigation();?> -->
 <?php else : ?>
         <p>No posts found</p>
