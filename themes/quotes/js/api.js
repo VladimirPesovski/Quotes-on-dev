@@ -18,7 +18,18 @@
             const randomNumber = Math.floor((Math.random() * 10));
             const title = data[randomNumber].title.rendered
             const content = data[randomNumber].content.rendered
-            $('#quotes-content').html(`<h2>${title}</h2>${content}`)
+            $('#quotes-content').html(
+            `<i class="fas fa-quote-left"></i>
+                <span class="merged">
+                    <div class="content">
+                        ${content}
+                    </div>
+    
+                    <div class="title">
+                        <h2>${title}</h2>
+                    </div>
+                </span>
+                <i class="fas fa-quote-right"></i>`)
         })
 
 
