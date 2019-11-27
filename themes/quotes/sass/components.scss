@@ -2,30 +2,24 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 100px 100px 20px 100px;
-    
-
+    margin: 0px 50px 0px 50px;
     i {
         color: #00cc00;
-        margin: 0px 50px;
-        font-size: 5em;
-        
+        margin: 0px 10px;
+        font-size: 5em;      
     }
     .content {
-        font-size: 2em;
+        font-size: 1.5em;
         text-align: left;
     }
     .title {
-        text-align: left;
-        
+        text-align: left; 
     }
     .merged {
-        flex-direction: column;
+        flex-direction: column; 
     }
 }
-
 button {
-
     font-family: 'Rock Salt', cursive;
     padding: 10px 40px;
     font-size: 1.5em;
@@ -34,31 +28,23 @@ button {
     background: none;
     border-radius: 2px;
 }
-
 footer {
-    bottom: 0;
-   
     ul{
         display: flex;
         position: relative;
         align-content: center;
         justify-content: space-around;
-        font-size: 1.3em;
-        
-
-    li{
-        list-style-type: none;
-        color:#00cc00;
-        padding: 15px;
-       
-        text-decoration: none;
-        a {
-            text-decoration: none;
+        font-size: 1.3em;      
+        li{
+            list-style-type: none;
             color:#00cc00;
+            padding: 15px;
+            text-decoration: none;
+            a{
+                text-decoration: none;
+                color:#00cc00;
+            }
         }
-        
-        }
-    
     }
     p {
         color: #00cc00;
@@ -66,34 +52,74 @@ footer {
             color: white;
             padding: 0px 15px 0px 0px;
         }
-
     }
 }
-
 .submit-section {
     margin: 0px;
     font-size: 2em;
 }
-
 #submit-button{
     margin: 100px;
+    border-radius: 2px;
 }
-
 form {
     display: flex;
     flex-direction: column;
 
     #quote-title{
-        margin: 10px 200px;
+        margin: 0px 300px;
         background-color: #222222;
-        border: 2px solid white;
-        
-
+        border: 1px solid white;
+        color: white;    
+        border-radius: 2px;
     }
     #quote-content{
-        margin: 10px 200px;
+        margin: 0px 300px;
         background-color: #222222;
-        border: 2px solid white;
+        border: 1px solid white;
+        color: white; 
+        border-radius: 2px;
     }
-    
+    #quote-source{
+        margin: 0px 300px;
+        background-color: #222222;
+        border: 1px solid white;
+        color: white; 
+        border-radius: 2px;
+    }
+    #quote-url{
+        margin: 0px 300px;
+        background-color: #222222;
+        border: 1px solid white;
+        color: white;
+        border-radius: 2px;
+    }
+
 }
+
+#about-title{
+    h2{
+    align-items: center;
+}
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px 100px 20px 100px;
+        #about-content {
+        font-size: 1em;
+        text-align: left;  
+        p{
+            margin: 0px;
+        }
+        span {
+            color: #00cc00;
+        }
+    }
+       
+
+}
+
+    

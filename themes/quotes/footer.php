@@ -4,7 +4,7 @@
     
 
     <ul>
-        <li>About</li>
+        <li><a href="<?php echo get_home_url() . '/about' ;?>"><p>About</p></a></li>
         <li>Archives</li>
         <li><a href="<?php echo get_home_url() . '/submit' ;?>"><p>Submit a Quote</p></a></li>
         

@@ -32,15 +32,23 @@
 
     $('#submit-button').on('click', function(e){
        const $title = $('#quote-title').val()
+       const $content = $('#quote-content').val()
+       const $url = $('#quote-url').val()
+       const $source = $('#quote-source').val()
        const data = {
-           title: $title
+           title: $title,
+           content: $content,
+           url: $url,
+           source: $source
        }
+
+
        $.ajax({
            method: 'POST',
-           url: qod_data.root_url + '/wp-json/quotes/v1/post',
+           url: qod_data.root_url + '/wp-json/wp/v2/posts',
            data,
            beforeSend: function(xhr) {
-               xhr.setRequestHeader('X-WP-Nonce', wpApiSettings.nonce)
+               xhr.setRequestHeader('X-WP-Nonce', qod_data.nonce)
            }
        })
     })

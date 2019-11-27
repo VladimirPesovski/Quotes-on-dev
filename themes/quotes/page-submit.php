@@ -16,9 +16,13 @@
     
     </section>
         <form>
-            <input id="quote-title" type="text" placeholder="Your title goes here... " style="width: 300px; height: 30px;">
+            <input id="quote-title" type="text" placeholder="Your title goes here... " style="width: 400px; height: 30px;">
             <br>
-            <textarea id="quote-content" type="text" cols= "100" rows= "8" placeholder="Your quote goes here... "></textarea>
+            <textarea id="quote-content" type="text" cols= "100" rows= "5" placeholder="Your quote goes here... "></textarea>
+            <br>
+            <input id="quote-source" type="text" placeholder="Your source goes here... " style="width: 400px; height: 30px;">
+            <br>
+            <input id="quote-url" type="text" placeholder="Your url goes here.. " style="width: 400px; height: 30px;">
         </form>
 
     <button id ="submit-button">Submit a Quote</button>

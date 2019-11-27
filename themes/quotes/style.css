@@ -29,13 +29,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 100px 100px 20px 100px; }
+  margin: 0px 50px 0px 50px; }
   #quotes-content i {
     color: #00cc00;
-    margin: 0px 50px;
+    margin: 0px 10px;
     font-size: 5em; }
   #quotes-content .content {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: left; }
   #quotes-content .title {
     text-align: left; }
@@ -54,38 +54,38 @@ button {
   background: none;
   border-radius: 2px; }
 
-footer {
-  bottom: 0; }
-  footer ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    font-size: 1.3em; }
-    footer ul li {
-      list-style-type: none;
-      color: #00cc00;
-      padding: 15px;
-      text-decoration: none; }
-      footer ul li a {
-        text-decoration: none;
-        color: #00cc00; }
-  footer p {
-    color: #00cc00; }
-    footer p span {
-      color: white;
-      padding: 0px 15px 0px 0px; }
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.3em; }
+  footer ul li {
+    list-style-type: none;
+    color: #00cc00;
+    padding: 15px;
+    text-decoration: none; }
+    footer ul li a {
+      text-decoration: none;
+      color: #00cc00; }
+
+footer p {
+  color: #00cc00; }
+  footer p span {
+    color: white;
+    padding: 0px 15px 0px 0px; }
 
 .submit-section {
   margin: 0px;
   font-size: 2em; }
 
 #submit-button {
-  margin: 100px; }
+  margin: 100px;
+  border-radius: 2px; }
 
 form {
   display: -webkit-box;
@@ -96,10 +96,51 @@ form {
       -ms-flex-direction: column;
           flex-direction: column; }
   form #quote-title {
-    margin: 10px 200px;
+    margin: 0px 300px;
     background-color: #222222;
-    border: 2px solid white; }
+    border: 1px solid white;
+    color: white;
+    border-radius: 2px; }
   form #quote-content {
-    margin: 10px 200px;
+    margin: 0px 300px;
     background-color: #222222;
-    border: 2px solid white; }
+    border: 1px solid white;
+    color: white;
+    border-radius: 2px; }
+  form #quote-source {
+    margin: 0px 300px;
+    background-color: #222222;
+    border: 1px solid white;
+    color: white;
+    border-radius: 2px; }
+  form #quote-url {
+    margin: 0px 300px;
+    background-color: #222222;
+    border: 1px solid white;
+    color: white;
+    border-radius: 2px; }
+
+#about-title h2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 100px 100px 20px 100px; }
+  .main-content #about-content {
+    font-size: 1em;
+    text-align: left; }
+    .main-content #about-content p {
+      margin: 0px; }
+    .main-content #about-content span {
+      color: #00cc00; }

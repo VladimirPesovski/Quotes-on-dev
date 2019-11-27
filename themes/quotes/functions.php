@@ -2,6 +2,17 @@
 
 require get_theme_file_path('/inc/api-route.php');
 
+//Add custom fields to JSON API data
+function qod_custom_rest(){
+    register_rest_field('post', 'quotesSource', array(
+        'get_callback' => function(){return get_field('quote_source');}
+    ));
+
+    register_rest_field('post', 'quotesURL', array(
+        'get_callback' => function(){return get_field('quote_url');}
+    ));
+}
+
 //Adds script and stylesheets
 function quotes_files() {
     wp_enqueue_style('quotes_styles', get_stylesheet_uri('/build/css/style.min.css'), NULL, microtime());
