@@ -70,7 +70,6 @@ footer {
       list-style-type: none;
       color: #00cc00;
       padding: 15px;
-      margin: 30px;
       text-decoration: none; }
       footer ul li a {
         text-decoration: none;
@@ -88,5 +87,19 @@ footer {
 #submit-button {
   margin: 100px; }
 
-form input {
-  margin: 30px; }
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  form #quote-title {
+    margin: 10px 200px;
+    background-color: #222222;
+    border: 2px solid white; }
+  form #quote-content {
+    margin: 10px 200px;
+    background-color: #222222;
+    border: 2px solid white; }

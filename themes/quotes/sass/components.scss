@@ -50,7 +50,7 @@ footer {
         list-style-type: none;
         color:#00cc00;
         padding: 15px;
-        margin: 30px;
+       
         text-decoration: none;
         a {
             text-decoration: none;
@@ -80,7 +80,20 @@ footer {
 }
 
 form {
-    input{
-        margin: 30px;
+    display: flex;
+    flex-direction: column;
+
+    #quote-title{
+        margin: 10px 200px;
+        background-color: #222222;
+        border: 2px solid white;
+        
+
     }
+    #quote-content{
+        margin: 10px 200px;
+        background-color: #222222;
+        border: 2px solid white;
+    }
+    
 }

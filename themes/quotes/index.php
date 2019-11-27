@@ -12,6 +12,8 @@
     <span class="merged">
         <div class="content">
             <?php the_content(); ?>
+            <?php echo get_field('quote_source');?>
+            <?php echo get_field('quote_url');?>
         </div>
 
         <div class="title">
