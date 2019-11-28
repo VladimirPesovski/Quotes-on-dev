@@ -6,18 +6,20 @@
 
     <?php while( have_posts() ) :
         the_post(); ?>
+       
     
     <i class="fas fa-quote-left"></i>
 
     <span class="merged">
         <div class="content">
             <?php the_content(); ?>
-            <?php echo get_field('quote_source');?>
-            <?php echo get_field('quote_url');?>
+            
+            <?php echo get_post_meta( get_the_ID(), '_qod_quote_source_url', true);?>
+           
         </div>
 
         <div class="title">
-            <h2><span>- </span><?php the_title(); ?></h2>
+            <h2><span>- </span><?php the_title()?></span></h2>
         </div>
     </span>
 

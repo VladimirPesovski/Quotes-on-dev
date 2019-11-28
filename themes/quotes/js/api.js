@@ -16,6 +16,8 @@
             const randomNumber = Math.floor((Math.random() * 10));
             const title = data[randomNumber].title
             const content = data[randomNumber].content
+            const source = data[randomNumber].quotesURL
+            const url = data[randomNumber].quotesSource
             $('#quotes-content').html(
             `<i class="fas fa-quote-left"></i>
                 <span class="merged">
@@ -23,10 +25,17 @@
                         ${content}
                     </div>
                     <div class="title">
-                        <h2><span>-</span> ${title}</h2>
+                        <h2>
+                        <span>-</span>${title}<a class="source" href="${url}">${source}</a>
+                        </h2>
+                        
+                        
+                        
+                        
                     </div>
                 </span>
-            <i class="fas fa-quote-right"></i>`)
+            <i class="fas fa-quote-right"></i>
+            `)
         })
     })
 
@@ -38,8 +47,9 @@
        const data = {
            title: $title,
            content: $content,
-           url: $url,
-           source: $source
+           _qod_quote_source_url: $url,
+           _qod_quote_source: $source
+           
        }
 
 
@@ -54,8 +64,3 @@
     })
 
 })(jQuery);
-
-
-
-
-
