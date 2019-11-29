@@ -18,13 +18,6 @@ function quotes_files() {
         'root_url' => get_site_url(),
         'nonce' => wp_create_nonce('wp_rest')
     ) );
-
-    // wp_localize_script('qod_api', 'api_url', array(
-    //     'root_url' => rest_url(),
-    //     'home_url' => home_url(),
-    //     'nonce' => wp_create_nonce('wp_rest')
-
-    // ));
 }
 
 add_action('wp_enqueue_scripts', 'quotes_files');

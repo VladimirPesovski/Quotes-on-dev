@@ -11,26 +11,20 @@
     .content {
         font-size: 1.5em;
         text-align: left;
-
-//         overflow: auto;
-//   white-space: nowrap;
-//         @keyframes typing {
-//             from { width: 0 }
-//             to { width: 100% }
-//           }
-//         @keyframes blinking-cursor {
-//             from, to { border-color: transparent }
-//             50% { border-color: orange }
-//           }
-//         animation: typing 3.5s steps(40, end);
     }
     .title {
-        text-align: left; 
+        text-align: left;
+        a {
+            text-decoration: none;
+            color: #00cc00;
+            margin-left: 10px;
+        }
     }
     .merged {
-        flex-direction: column; 
+        flex-direction: column;
     }
 }
+
 button {
     font-family: 'Rock Salt', cursive;
     padding: 10px 40px;
@@ -40,6 +34,7 @@ button {
     background: none;
     border-radius: 2px;
 }
+
 footer {
     ul{
         display: flex;
@@ -58,6 +53,7 @@ footer {
             }
         }
     }
+
     p {
         color: #00cc00;
         span{
@@ -66,18 +62,20 @@ footer {
         }
     }
 }
+
 .submit-section {
     margin: 0px;
     font-size: 2em;
 }
+
 #submit-button{
     margin-top: 30px;
     border-radius: 2px;
 }
+
 form {
     display: flex;
     flex-direction: column;
-
     #quote-title{
         margin: 0px 300px;
         background-color: #222222;
@@ -112,7 +110,7 @@ form {
 #about-title{
     h2{
     align-items: center;
-}
+    }
 }
 
 .main-content {
@@ -121,17 +119,40 @@ form {
     justify-content: center;
     margin: 100px 100px 20px 100px;
         #about-content {
-        font-size: 1em;
-        text-align: left;  
-        p{
-            margin: 0px;
+            font-size: 1em;
+            text-align: left;  
+                p{
+                    margin: 0px;
+                }
+                span {
+                    color: #00cc00;
+                }
         }
-        span {
-            color: #00cc00;
-        }
-    }
-       
+}
+
+.search {
+    display: flex;
+    align-items: center;
 
 }
 
+.broken-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .broken-content {
+        flex-direction: column;
+        text-align: left;
+    }
+    i {
+        font-size: 5em;
+        color: #00cc00;
+        margin: 0px 30px;
+    } 
+    
+}
+
+.search {
+    display: inline-block;
+}
     

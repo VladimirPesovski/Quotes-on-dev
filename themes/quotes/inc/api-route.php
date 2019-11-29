@@ -89,8 +89,8 @@ function quotesResults($data) {
         array_push($resultsArr, array(
             'title' => get_the_title(),
             'content' => get_the_content(),
-            'quotesURL' => get_post_meta( get_the_ID(), '_qod_quote_source', true),
-            'quotesSource' => get_post_meta( get_the_ID(), '_qod_quote_source_url', true),
+            'quotesURL' => get_post_meta( get_the_ID(), '_qod_quote_url', true),
+            'quotesSource' => get_post_meta( get_the_ID(), '_qod_quote_source', true),
             // 'quotesURL' => get_field('quote_url'),
             // 'quotesSource' => get_field('quote_source'),
             'permalink' => get_the_permalink()
