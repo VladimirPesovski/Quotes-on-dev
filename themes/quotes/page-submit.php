@@ -18,7 +18,7 @@
         <form>
             <input id="quote-title" type="text" placeholder="Your title goes here... " style="width: 400px; height: 30px;">
             <br>
-            <textarea id="quote-content" type="text" cols= "100" rows= "5" placeholder="Your quote goes here... "></textarea>
+            <textarea id="quote-content" type="text" style="width: 400px" rows= "10" placeholder="Your quote goes here... "></textarea>
             <br>
             <input id="quote-source" type="text" placeholder="Your source goes here... " style="width: 400px; height: 30px;">
             <br>

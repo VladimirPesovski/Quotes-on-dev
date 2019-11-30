@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php if( have_posts() ) :?>
-<section id = "quotes-content">
+<section class = "search-results">
 <!-- The WordPress Loop: loads post content  -->
 
 
@@ -9,6 +9,7 @@
        
     <div class="search-merge">
     <i class="fas fa-quote-left"></i>
+    <section class=search-content-title>
         <div class="search-content">
             <?php the_content(); ?>
             <?php echo get_post_meta( get_the_ID(), '_qod_quote_source_url', true);?>
@@ -16,9 +17,11 @@
         <div class="search-title">
             <h2><span>- </span><span><?php the_title()?></span></h2>
         </div>
-    </div>
+    </section>
+    
 
     <i class="fas fa-quote-right"></i>
+    </div>
 
     <!-- Loop ends -->
 

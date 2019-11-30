@@ -49,6 +49,27 @@
        }
 
 
+
+    
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     const submitButton = document.getElementById('submit-button');
+    //     if(submitButton) {
+    //         submitButton.addEventListener('click', function (event) {
+    //             event.preventDefault();
+    //             submitDataFromForm();
+    //         });
+    //     }}
+
+
+
+
+
+
+
+
+
+
+
        $.ajax({
            method: 'POST',
            url: qod_data.root_url + '/wp-json/wp/v2/posts',

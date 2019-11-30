@@ -14,4 +14,4 @@
 
 </head>
 <body <?php body_class();?>>
-    <img class="logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/qod-logo.svg">
+<a href="http://localhost:3000/Quotesondev"> <img class="logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/qod-logo.svg"></a>
